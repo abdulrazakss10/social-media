@@ -1,0 +1,201 @@
+/* Container */
+.feed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 20px; */
+  margin-top: 30px;
+}
+
+/* Card */
+.feed-card {
+  background: white;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* Header */
+.feed-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Profile Section */
+.profile-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+/* .online-dot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background: green;
+  border-radius: 50%;
+  border: 2px solid white;
+} */
+
+.user-info h3 {
+  font-size: 16px;
+  margin: 0;
+  color: black;
+  font-family: "Atlassian Sans";
+}
+
+.user-info p {
+  color: gray;
+  font-size: 12px;
+  margin: 0;
+  font-family: "Atlassian Sans";
+}
+
+/* Post Text */
+.post-text {
+  font-size: 14px;
+  margin: 10px 0;
+  color: black;
+  font-family: "Atlassian Sans";
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Show only 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.post-text.expanded {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.read-more {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Atlassian Sans";
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.post-image-container {
+  position: relative;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.like-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  /* background: white; */
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.post-actions {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: 10px;
+  font-size: 14px;
+  color: gray;
+  gap: 10px;
+}
+.post-actions span {
+  color: black;
+  font-weight: bold;
+  font-family: "Atlassian Sans";
+}
+.post-actions div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.options-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+}
+
+/* Product Section */
+.product-section-title {
+  font-size: 18px;
+  margin: 20px 0;
+  color: black;
+  font-weight: bold;
+  font-family: "Atlassian Sans";
+}
+
+.product-container {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+.product-card {
+  border-radius: 10px;
+  min-width: 250px;
+  text-align: center;
+  white-space: normal;
+}
+
+.product-image {
+  border-radius: 10px;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.product-title {
+  font-size: 14px;
+  color: #000;
+  margin: 10px 0;
+  text-align: left;
+  font-family: "Atlassian Sans";
+  font-weight: bold;
+}
+
+.product-price {
+  font-size: 16px;
+  /* font-weight: bold; */
+  color: black;
+  font-family: "Atlassian Sans";
+  font-weight: bold;
+}
+
+.product-rating {
+  /* color: gold; */
+  font-size: 14px;
+  gap: 2px;
+}
+.star-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+}
